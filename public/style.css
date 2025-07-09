@@ -1,0 +1,327 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #2c3e50;
+    padding: 15px 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+    color: white !important;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: 500;
+    background-color: #156cc3;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar button {
+    color: white !important;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: 500;
+    background-color: #156cc3;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #34495e;
+    border-radius: 5px;
+}
+
+.profile-img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+/* Hero Section */
+.hero {
+    background: url('bank-background.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+/* Card Layout */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 400px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Buttons */
+.button {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.button:hover {
+    background-color: #2980b9;
+}
+
+.button.secondary {
+    background-color: #95a5a6;
+}
+
+.button.secondary:hover {
+    background-color: #7f8c8d;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: white;
+    margin-top: 40px;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Transactions Table */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+.transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.transaction-table th, .transaction-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.transaction-table th {
+    background-color: #3498db;
+    color: white;
+    font-weight: 600;
+}
+
+.transaction-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.transaction-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Pagination */
+.pagination {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.pagination a {
+    padding: 10px 15px;
+    margin: 5px;
+    background: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.pagination a.active {
+    background: #2c3e50;
+}
+
+.pagination a:hover {
+    background-color: #2980b9;
+}
+
+/* Export Buttons */
+.export-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.export-buttons .btn {
+    padding: 10px 15px;
+    background: #27ae60;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.export-buttons .btn:hover {
+    background-color: #219653;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        height: 300px;
+        font-size: 2rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .transaction-table th, .transaction-table td {
+        padding: 10px;
+    }
+}
+
+/* Login and Signup Container */
+.login__Cont {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login_header h4 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #2c3e50;
+}
+
+/* Form Styles */
+.login__form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.label {
+    font-weight: 500;
+    color: #333;
+}
+
+.user__input, .pass__input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.user__input:focus, .pass__input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Error Messages */
+.error-message, .invalid-input__err {
+    color: #e74c3c;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Buttons */
+.formBtns__div {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.button.secondary {
+    background-color: #95a5a6;
+}
+
+.button.secondary:hover {
+    background-color: #7f8c8d;
+}
+
+/* Links */
+.login__Cont a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.login__Cont a:hover {
+    text-decoration: underline;
+}
+
+
+/*transaction form*/

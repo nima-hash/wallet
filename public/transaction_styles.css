@@ -1,0 +1,266 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Navbar */
+.navbar {
+    background-color: #2c3e50;
+    padding: 15px 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+    color: white !important;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: 500;
+    background-color: #156cc3;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar button {
+    color: white !important;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: 500;
+    background-color: #156cc3;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #34495e;
+    border-radius: 5px;
+}
+
+.profile-img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+}
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.label {
+    font-weight: 500;
+    color: #333;
+}
+
+input[type="text"], input[type="number"], input[type="date"], textarea {
+    width: 100%;
+    padding: 10px,10px,0px,10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+    min-height: 40px; /* Ensure input fields are tall enough */
+
+}
+
+input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+
+
+/* Buttons */
+.formBtns__div {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f8f9fa;
+}
+
+.report-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.report-link:hover {
+    text-decoration: underline;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    /* transform: translate(-50%, -50%); */
+    background: white;
+    padding-top: 60px;
+    border-radius: 10px;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+
+}
+.modal-row {
+    margin-bottom: 15px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #000;
+}
+
+/* Error Messages */
+.error-message, .invalid-input__err {
+    color: #ec442a;
+    font-size: 0.9rem;
+    background-color: #e7ccc7;
+
+    /* Center the text */
+    text-align: center;  
+
+    /* Reduce spacing between this div and the one above */
+    margin-top: 2px;  /* Reduce margin to bring it closer to the previous div */
+
+    /* Optional: Add padding to make the text visually balanced */
+    padding: 4px 8px;  
+
+    /* Make the div inline-block to fit the text size */
+    display: inline-block;
+    
+    /* Round the edges for better aesthetics */
+    border-radius: 4px;
+}
+
+.manage-icon {
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    color: #007bff;
+}
+
+.manage-icon:hover {
+    color: #0056b3;
+}
+
+.filter-container { display: none; margin-bottom: 10px; padding: 10px; background: #f9f9f9; border-radius: 5px; }
+        input, select, button { padding: 5px; margin: 5px; }
+        button { cursor: pointer; 
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 300px;
+        font-size: 2rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .transaction-table th, .transaction-table td {
+        padding: 10px;
+    }
+
+    #expenseUpdateForm table {
+        width: 100%;
+        table-layout: fixed; /* Prevents shifting */
+    }
+    
+    #expenseUpdateForm input {
+        width: 100%;
+        min-width: 50px;
+        padding: 5px;
+    }
+    
+    /* Adjust button styles */
+    #expenseUpdateForm button {
+        margin: 0 5px;
+    }
+}
